@@ -13,7 +13,7 @@ SoATest::~SoATest()
 void SoATest::setup()
 {
 	for (auto & vec : data) {
-		vec = std::vector<unsigned char>(100000000, 0);
+		vec = std::vector<unsigned char>(5000000, 0);
 	}
 }
 

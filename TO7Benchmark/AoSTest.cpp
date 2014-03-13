@@ -13,7 +13,7 @@ AoSTest::~AoSTest()
 
 void AoSTest::setup()
 {
-	data = std::vector<rgb>(33333333, rgb());
+	data = std::vector<rgb>(5000000, rgb());
 }
 
 void AoSTest::run()
