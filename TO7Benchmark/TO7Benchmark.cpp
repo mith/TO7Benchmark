@@ -22,7 +22,9 @@ int main(int argc, const char* argv[])
 	for (auto & test : tests) {
 		test->setup();
 		timer.start();
-		test->run();
+		for (int i = 20; i > 0; --i) {
+			test->run();
+		}
 		timer.stop();
 		
 		std::cout << "Test " << test->name << " took " << timer.elapsedSeconds() << " seconds." << std::endl;

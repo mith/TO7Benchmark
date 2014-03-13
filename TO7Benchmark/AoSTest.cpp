@@ -19,7 +19,7 @@ void AoSTest::setup()
 void AoSTest::run()
 {
 	rgb * ptr = data.data();
-	for (int i = data.size(); i > 0; --i) {
+	for (size_t i = data.size(); i > 0; --i) {
 		rgb px = *ptr;
 		px.red = std::max(px.green, px.blue);
 
