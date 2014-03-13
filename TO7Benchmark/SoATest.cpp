@@ -31,10 +31,12 @@ void SoATest::run()
 		*trg_ptrs[1] = 128 + *src_ptrs[1];
 		*trg_ptrs[2] = 255 + *src_ptrs[2];
 
-
-		for (int i = 0; i < src_ptrs.size(); i++) {
-			src_ptrs[i]++;
-			trg_ptrs[i]++;
-		}
+		src_ptrs[0]++;
+		trg_ptrs[0]++;
+		src_ptrs[1]++;
+		trg_ptrs[1]++;
+		src_ptrs[2]++;
+		trg_ptrs[2]++;
+		
 	}
 }

@@ -18,14 +18,12 @@ void BoolVectorTest::setup()
 
 void BoolVectorTest::run()
 {
-	std::vector<bool>::const_pointer src_i = src.cbegin();
+	//std::vector<bool>::const_pointer src_i = src.cbegin();
 	std::vector<bool>::pointer trg_i = trg.begin();
 
-	while (src_i != src.cend())
+	for (const auto & src_i : src)
 	{
-		*trg_i = *src_i || true;
-
-		src_i++;
-		trg_i++;
+		*trg_i = src_i || true;
+		++trg_i;
 	}
 }

@@ -13,8 +13,8 @@
 int main(int argc, const char* argv[])
 {
 	std::vector<std::unique_ptr<Test>> tests;
-	//tests.push_back(std::make_unique<VectorPointerTest>());
-	//tests.push_back(std::make_unique<VectorIteratorTest>());
+	tests.push_back(std::make_unique<VectorPointerTest>());
+	tests.push_back(std::make_unique<VectorIteratorTest>());
 	tests.push_back(std::make_unique<SoATest>());
 	tests.push_back(std::make_unique<AoSTest>());
 	tests.push_back(std::make_unique<BoolVectorTest>());

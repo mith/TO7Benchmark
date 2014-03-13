@@ -6,7 +6,8 @@ class VectorIteratorTest :
 	public Test
 {
 private:
-	std::vector<unsigned char> data;
+	std::vector<unsigned char> src;
+	std::vector<unsigned char> trg;
 public:
 	void setup();
 	void run();

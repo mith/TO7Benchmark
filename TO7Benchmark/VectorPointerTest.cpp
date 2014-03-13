@@ -12,15 +12,19 @@ VectorPointerTest::~VectorPointerTest()
 
 void VectorPointerTest::setup()
 {
-	data = std::vector<unsigned char>(1000000000, 0);
+	src = std::vector<unsigned char>(10000000, 0);
+	trg = std::vector<unsigned char>(10000000, 0);
 }
 
 void VectorPointerTest::run()
 {
-	unsigned char * ptr = data.data();
+	const unsigned char * src_ptr = trg.data();
+	unsigned char * trg_ptr = trg.data();
 
-	for (size_t i = data.size(); i > 0; --i) {
-		*ptr = 255;
-		ptr++;
+	for (size_t i = src.size(); i > 0; --i) {
+		*trg_ptr = *src_ptr + 124;
+
+		src_ptr++;
+		trg_ptr++;
 	}
 }
