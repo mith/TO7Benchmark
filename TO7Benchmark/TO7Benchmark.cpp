@@ -8,6 +8,7 @@
 #include "VectorPointerTest.h"
 #include "SoATest.h"
 #include "AoSTest.h"
+#include "BoolVectorTest.h"
 
 int main(int argc, const char* argv[])
 {
@@ -16,6 +17,7 @@ int main(int argc, const char* argv[])
 	//tests.push_back(std::make_unique<VectorIteratorTest>());
 	tests.push_back(std::make_unique<SoATest>());
 	tests.push_back(std::make_unique<AoSTest>());
+	tests.push_back(std::make_unique<BoolVectorTest>());
 
 	BaseTimer timer;
 

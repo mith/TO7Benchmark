@@ -1,7 +1,7 @@
 #include "SoATest.h"
 
 
-SoATest::SoATest() : Test("Struct of Arrays test")
+SoATest::SoATest() : Test("Struct of Arrays")
 {
 }
 

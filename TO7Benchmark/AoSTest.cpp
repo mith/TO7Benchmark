@@ -2,7 +2,7 @@
 #include <array>
 
 
-AoSTest::AoSTest() : Test("Array of structs test")
+AoSTest::AoSTest() : Test("Array of structs")
 {
 }
 
