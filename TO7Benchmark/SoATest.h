@@ -6,7 +6,8 @@ class SoATest :
 	public Test
 {
 private:
-	std::array<std::vector<unsigned char>, 3> data;
+	std::vector<unsigned char> src;
+	std::vector<unsigned char> trg;
 public:
 	void setup();
 	void run();

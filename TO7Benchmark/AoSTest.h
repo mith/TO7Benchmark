@@ -14,7 +14,8 @@ class AoSTest :
 	public Test
 {
 private:
-	std::vector<rgb> data;
+	std::vector<rgb> src;
+	std::vector<rgb> trg;
 public:
 	void setup();
 	void run();
